@@ -1,0 +1,48 @@
+/* @media only screen and (min-width: 700px)
+{
+
+} */
+      * {
+        background-color: gray;
+      }
+      body {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        background-color: #fff;
+        margin-top: 150px;
+        width: 400px;
+        border-radius: 1.2rem;
+      }
+      h2,
+      li,
+      label {
+        background-color: #fff;
+        margin-left: 0px;
+      }
+
+      #submit,#Reload {
+        margin-right: 0px;
+        margin-left: 115px;
+        margin-bottom: 10px;
+        width: 40%;
+        border: none;
+        cursor: pointer;
+        height: 33px;
+        background-color: #8e44ad;
+        color: white;
+        font-family: sans-serif;
+        border-radius: 1.2rem;
+      }
+      ul,
+      h2 {
+        list-style: none;
+        padding: 0;
+        margin-left: 20px;
+      }
+      label {
+        cursor: pointer;
+      }
+    
