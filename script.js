@@ -105,12 +105,12 @@
                             correct: "b",
                           },
                           {
-                            question: "Q 10 - Which of the following tag is used to define options in a drop-down selection list?",
-                           a: "<select>",
-                           b: "<list>",
-                           c: "<dropdown>",
-                           d: "<option>",
-                           correct: "d",
+                            question: "Q 10 - Java is Developed by ?",
+                           a: "James Gosling",
+                           b: "Denies Ritchie",
+                           c: "Bjarne Stroustrup",
+                           d: "Brendan Eich",
+                           correct: "a",
                          },
       ];
     
