@@ -29,3 +29,10 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
+      - name: Print hello
+        run: |
+          echo "url to access this fucking quize app"
+          echo "https://shantanubhayare.github.io/QuizeApplication/"
+          echo "Repository: $GITHUB_REPOSITORY"
+          
