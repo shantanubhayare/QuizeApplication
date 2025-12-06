@@ -1,9 +1,9 @@
-name: Deploy Quiz App to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]     # deploy every time you push to main
-  workflow_dispatch:        # allow manual deployment
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -15,19 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # If your site is just static HTML/CSS/JS, no build is needed.
-      # If you have a /dist folder created by a build step, include that build command here.
-      # Example:
+      # If you have a build step (optional)
       # - name: Build
-      #   run: npm install && npm run build
+      #   run: npm ci && npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload static files
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./   # publish root folder (your HTML, CSS, JS)
+          path: ./   # change to ./dist if your files are in dist
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
